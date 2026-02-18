@@ -23,11 +23,9 @@ def load_acs_income():
     return X_train, y_train, X_test, y_test
 
 
-from fairlearn.datasets import fetch_acs_income
-import pandas as pd
-
 # This is the correct call (no year parameter)
 data = fetch_acs_income(states=["CA"], as_frame=True)
+
 
 # data is a Bunch object → convert to DataFrame + Series
 df = data.frame.copy()           # all features + target
