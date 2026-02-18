@@ -40,3 +40,8 @@ runs/
 
 *.csv
 data/nsl_kdd/
+data/
+
+.DS_Store
+.ipynb_checkpoints/
+.ipynb_checkpoints  
